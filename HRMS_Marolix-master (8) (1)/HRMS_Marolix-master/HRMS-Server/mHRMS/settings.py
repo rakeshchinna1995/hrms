@@ -18,7 +18,7 @@ SECRET_KEY = config('SECRET_KEY', default='your_default_secret_key_here')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.25.219.78']
 
 AUTH_USER_MODEL = "AdminAccount.User"
 
