@@ -10,18 +10,36 @@ stage("intigration"){
 steps{
 
 git branch: 'main', url: 'https://github.com/rakeshchinna1995/hrms.git'
-}
-}
-
-
-
-}
-
-
-
 
 
 
 
 
 }
+}
+
+
+
+stage('install python depencies') {
+            steps {
+                script {
+                    // Install dependencies using Pipenv
+                    sh 'pipenv install --dev'
+                }
+            }
+        }
+
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
