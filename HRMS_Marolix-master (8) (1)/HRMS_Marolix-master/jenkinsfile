@@ -1,0 +1,27 @@
+pipeline {
+agent any
+
+
+stages {
+
+stage("intigration"){
+
+
+steps{
+
+git branch: 'main', url: 'https://github.com/rakeshchinna1995/hrms.git'
+}
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+}
