@@ -31,6 +31,24 @@ stage('install python depencies') {
 
 
 
+
+
+stage("build image") {
+
+
+steps{
+dir("/var/lib/jenkins/workspace/rakesh/HRMS_Marolix-master (8) (1)/HRMS_Marolix-master/HRMS-Server
+") {
+
+
+
+
+script {
+
+sh "docker build -t rockey ."
+}
+
+}
 }
 
 
@@ -38,7 +56,8 @@ stage('install python depencies') {
 
 
 
-
+}
+}
 
 
 
